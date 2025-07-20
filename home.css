@@ -1,0 +1,237 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+ 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6366f1;
+  width: 5px;
+  border-radius: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#navbar {
+  background-color: #0f0f10a8;
+  backdrop-filter: blur(6px);
+}
+
+.navbar-burger {
+  transition: all 0.3s ease;
+}
+
+.navbar-burger:hover {
+  transform: scale(1.1);
+}
+
+#mobile-menu {
+  background: rgba(15, 15, 16, 0.95);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+#mobile-menu.slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Hover effects for desktop menu items */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #6366f1, #818cf8);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Active state for current page */
+.nav-link.active {
+  color: white !important;
+  border-bottom: 2px solid #6366f1 !important;
+}
+
+/* Smooth scroll behavior */
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: "Inter", "poppins";
+}
+
+.hero{
+  background: url(imgs/homeimg.png) no-repeat center center/cover fixed ;
+  /* filter: brightness(0.5); */
+}
+
+
+.marquee-container {
+  width: 70%;
+  overflow: hidden;
+  height: 25px;
+  position: relative;
+  cursor: pointer;
+  margin: 5rem auto;
+  border-radius: 5px
+}
+
+.marquee-track {
+  display: flex;
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.marquee-item {
+  padding: 0 50px;
+}
+.swiper{
+  height: 420px;
+}
+.swiper-slide{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+  .marquee-container {
+    width: 100%;
+  }
+  .hero h2{
+    font-size: 3rem;
+  }
+  .hero p{
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero{
+    height: 80vh;
+  }
+  
+}
+@media screen and (max-width: 500px) {
+  .hero{
+    padding:2rem 1rem;
+  }
+  .hero h2{
+    font-size: 2rem;
+  }
+  .hero p{
+    font-size: 0.8rem;
+  }
+  .marquee-container{
+    height: 20px;
+  }
+  #courses-list-container{
+    padding:8rem 2rem;
+  }
+  .contact-form{
+    padding:1.5rem;
+  }
+  .navbar{
+    padding: 1rem;
+  }
+  #courses-list-container {
+    padding:8rem 1rem;
+  }
+  .courses-hero{
+    padding: 7rem 1rem;
+  }
+  .footer{
+    padding: 1.5rem 1rem;
+  }
+  .courespagecontainer{
+    padding: 5rem 1rem;
+  }
+  .courespagecontainer2{
+    padding: 0 1rem;
+  }
+  .swiper-content{
+    padding: 3rem 1rem;
+  }
+  .discraption{
+    font-size: 0.84rem;
+  }
+
+}
+
+@media screen and (max-width: 400px){
+  #courses-list-container .title , .couses-title, .RelatedCoursestitle{
+    font-size: 2rem;
+  }
+  .contact-container .contact-info , .contact-container p{
+    font-size: 0.9rem;
+  }
+  .contact-container {
+    padding: 5rem 1rem;
+  }
+  .contact-form{
+    padding:1.5rem 1rem;
+  }
+  .navbar{
+    padding: 1rem;
+  }
+  .swiper-content div p {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+}
+
+@media screen and (max-width: 370px){
+  #courses-list-container .title , .couses-title, .RelatedCoursestitle{
+    font-size: 1.6rem;
+  }
+
+  .card-course h2{
+    font-size: 1.3rem;
+  }
+  .card-course h3{
+    font-size: 1rem;
+  }
+  .card-course .card-btn{
+    font-size: 0.8rem;
+  }
+  .card-course .card-price{
+    font-size: 1.5rem;
+  }
+  .contact-container h2 {
+    font-size: 2.5rem;
+  }
+
+}

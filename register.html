@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeZone</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+
+<body class="bg-[#0f0f10] h-screen flex flex-col gap-12 items-center justify-center px-8 py-4">
+  <h1 class="text-3xl font-bold text-center text-white">Welcome  To <span class="ml-2 text-indigo-500">Code</span>Zone</h1>
+  <form id="registerForm" class="w-full mx-auto max-w-md bg-[#1a1a1a] flex flex-col p-8 items-center justify-center gap-6 rounded-2xl"
+    enctype="multipart/form-data">
+    <h2 class="text-white text-2xl font-bold">Sign Up</h2>
+    
+    <div class="w-full grid grid-cols-2 justify-center gap-4 ">
+        <div class="w-full">
+          <input type="text" id="FristName"
+            class="bg-[#0f0f10] border-2 border-gray-600 text-white text-sm rounded-lg focus:border-indigo-600 block font-medium w-full p-2.5 outline-0 placeholder:text-gray-300"
+            placeholder="Frist name" required />
+        </div>
+    
+        <div class="w-full">
+          <input type="text" id="LastName"
+            class="bg-[#0f0f10] border-2 border-gray-600 text-white text-sm rounded-lg focus:border-indigo-600 block font-medium w-full p-2.5 outline-0 placeholder:text-gray-300"
+            placeholder="Last name" required />
+        </div>
+    </div>
+
+    <div class="w-full">
+      <input type="email" id="Email"
+        class="bg-[#0f0f10] border-2 border-gray-600 text-[#eeeeee] text-sm rounded-lg focus:border-indigo-600 block font-medium w-full p-2.5 outline-0 placeholder:text-gray-300"
+        placeholder="Email" required />
+    </div>
+
+    <div class="w-full">
+      <input type="password" id="Password"
+        class="bg-[#0f0f10] border-2 border-gray-600 text-[#eeeeee] text-sm rounded-lg focus:border-indigo-600 block font-medium w-full p-2.5 outline-0 placeholder:text-gray-300"
+        placeholder="Password" required />
+    </div>
+
+    <div class="w-full">
+      <input type="password" id="ConfirmPassword"
+        class="bg-[#0f0f10] border-2 border-gray-600 text-[#eeeeee] text-sm rounded-lg focus:border-indigo-600 font-medium block w-full p-2.5 outline-0 placeholder:text-gray-300"
+        placeholder="Confirm the password" required />
+    </div>
+
+    
+    <div class="flex items-center self-start">
+        <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-indigo-600 bg-[#0f0f10] focus:bg-indigo-500  rounded-2xl " required>
+        <label for="link-checkbox"  class="checkboxtext ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" class="text-indigo-500 hover:underline">terms and conditions</a>.</label>
+    </div>
+
+
+
+    <button type="submit" id="LoginBtn"
+      class="text-white bg-indigo-500 hover:bg-indigo-600 transition-all duration-300 cursor-pointer font-medium rounded-lg text-base w-full px-5 py-2.5 text-center">
+      Sign Up
+    </button>
+
+    <p class="donacount text-gray-300  font-medium">Already have an account ? <a href="index.html" class="text-indigo-500 hover:underline transition-all duration-200">Login</a></p>
+
+
+
+  </form>
+  <script src="js/admin.js"></script>
+</body>
+
+</html>
