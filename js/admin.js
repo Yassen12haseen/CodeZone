@@ -182,7 +182,7 @@ function ShowCoursesInCourses(){
     
                 </div>
                 <div class="flex items-center justify-between">
-                    <span class="card-price text-3xl font-bold text-[#eeeeee]">$${course.price}<span class="text-indigo-500">$</span></span>
+                    <span class="card-price text-3xl font-bold text-[#eeeeee]"><span class="text-indigo-500">$</span>${course.price}</span>
                     <button data-index="${index}" class="card-btn text-[#eeeeee] cursor-pointer bg-indigo-500 hover:bg-indigo-600 hover:text-white font-semibold rounded-xl text-base px-4 py-2 text-center transition-all duration-300">Learn Now</button>
                 </div>
             </div>
@@ -230,7 +230,7 @@ function ShowCoursesInHome(){
                       </div>
                   </div>
                   <div class="flex items-center justify-between">
-                      <span class="card-price text-3xl font-bold text-[#eeeeee]">$${courses[x].price}<span class="text-indigo-500">$</span></span>
+                      <span class="card-price text-3xl font-bold text-[#eeeeee]"><span class="text-indigo-500">$</span>${courses[x].price}</span>
                       <button data-index="${x}" class="card-btn text-[#eeeeee] cursor-pointer bg-indigo-500 hover:bg-indigo-600 hover:text-white font-semibold rounded-xl text-base px-4 py-2 text-center transition-all duration-300">Learn Now</button>
                   </div>
               </div>
@@ -291,7 +291,7 @@ function SearchCourses() {
         
                   </div>
                   <div class="flex items-center justify-between">
-                      <span class="card-price text-3xl font-bold text-[#eeeeee]">$${course.price}<span class="text-indigo-500">$</span></span>
+                      <span class="card-price text-3xl font-bold text-[#eeeeee]"><span class="text-indigo-500">$</span>${course.price}</span>
                       <button data-index="${index}" class="card-btn cursor-pointer text-[#eeeeee] bg-indigo-500 hover:bg-indigo-600 hover:text-white font-semibold rounded-xl text-base px-4 py-2 text-center transition-all duration-300">Learn Now</button>
                   </div>
               </div>
@@ -354,7 +354,7 @@ function SearchHome() {
     
                 </div>
                 <div class="flex items-center justify-between">
-                    <span class="card-price text-3xl font-bold text-[#eeeeee]">$${course.price}<span class="text-indigo-500">$</span></span>
+                    <span class="card-price text-3xl font-bold text-[#eeeeee]"><span class="text-indigo-500">$</span>${course.price}</span>
                     <button data-index="${index}" class="card-btn cursor-pointer text-[#eeeeee] bg-indigo-500 hover:bg-indigo-600 hover:text-white font-semibold rounded-xl text-base px-4 py-2 text-center transition-all duration-300">Learn Now</button>
                 </div>
             </div>
